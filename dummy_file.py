@@ -5,14 +5,7 @@ def hello_world() -> str:
 
 def dummy_function() -> None:
   for _ in range(3):
-    payload = dumps({
-      "source_id": "dummy_source_hash",
-      "slots": [
-        {
-          "name": "dummy_slot_name",
-          "value": "dummy_slot_value"
-        }
-    })
+    payload = dumps({"source_id": "dummy_source_hash","slots": [{"name": "dummy_slot_name","value": "dummy_slot_value"}]})
     print(payload)
 
 if __name__ == "__main__":
